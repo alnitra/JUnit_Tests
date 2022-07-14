@@ -1,7 +1,7 @@
 package ru.netology.course;
 
 
-import org.junit.*;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -20,7 +20,7 @@ public class MainTest
      */
 
     @BeforeAll
-    public static void  beforeAll(){
+    public static void  beforeAll() {
         System.out.println("Before all test:");
     }
 
@@ -62,7 +62,7 @@ public class MainTest
         return Stream.of(
                 Arguments.of(1,3,3),
                 Arguments.of(5,7,35),
-                Arguments.of(8,9,73)
+                Arguments.of(8,9,72)
         );
     }
 }
